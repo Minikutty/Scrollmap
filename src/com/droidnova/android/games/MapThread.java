@@ -1,3 +1,13 @@
+/**************************************************************************************
+ * 
+ * Copyright (C) 2015 Minikutty Joseph
+ * 
+ * [This program is licensed under the "MIT License"]
+ * For license information, please refer the following link. Link is
+ * https://github.com/Minikutty/Scrollmap/blob/master/License.md
+ *
+ *  **************************************************************************************/
+
 package com.droidnova.android.games;
 
 import android.graphics.Canvas;
