@@ -47,9 +47,12 @@ for license terms.
 ###### Prerequisites for build
 * Requires Android 2.0.1 and up.
 * The provided Android application works only on a 480x854 WVGA854 resolution Android AVD.
+ 
 ###### Installation instructions
 * Download and install the most recent apk file: Scrollmap.
+ 
 Installation guide is available at: http://www.talkandroid.com/guides/beginner/install-apk-files-on-android/
+
 ###### Build instructions
 
 #### Source Code:
@@ -58,7 +61,7 @@ https://github.com/Minikutty/Scrollmap
 
 #### References:
 
-https://developer.android.com
-http://www.phonesdevelopers.com/1784347/
-https://www.youtube.com/watch?v=7-n6p6RxSS8
-https://www.youtube.com/watch?v=sVx46awjtFQ  
+* https://developer.android.com
+* http://www.phonesdevelopers.com/1784347/
+* https://www.youtube.com/watch?v=7-n6p6RxSS8
+* https://www.youtube.com/watch?v=sVx46awjtFQ  
