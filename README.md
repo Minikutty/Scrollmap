@@ -11,7 +11,7 @@ There are 3 modes of operation in this application.
 For future enhancements:
 Implement the algorithm for calculating directions, reading GPS coordinates and downloading licensed maps like Google maps.
 
-This work is available under the "MIT License". For license information, please refer to the file "License.md".
+This work is available under the "MIT License". For license information, please refer to the file "COPYING".
 
 Here's the link which provides license information. 
 "https://github.com/Minikutty/Scrollmap/blob/master/COPYING"
