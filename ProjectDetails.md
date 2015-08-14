@@ -14,7 +14,8 @@ minikuttychiramel@gmail.com
 
 #### Issue Tracker:
 
-Report issues to: https://github.com/Minikutty/Scrollmap/issues
+Please report issues to the following link:
+https://github.com/Minikutty/Scrollmap/issues
 
 #### Description:
 
