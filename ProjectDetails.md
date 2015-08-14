@@ -14,10 +14,12 @@ minikuttychiramel@gmail.com
 
 #### Issue Tracker:
 
-Please report issues to the following link:
+Please report issues at the following link:
 https://github.com/Minikutty/Scrollmap/issues
 
 #### Description:
+
+MANUAL 
 
 A scrollmap is an android application which acts as a multifunction navigation instrument, showing the current location 
 on a chart and the feet above sea level. This app mainly provides the scrolling map functionality of a GPS.
@@ -43,7 +45,6 @@ This work is available under the "MIT License". Please see the file [COPYING] (h
 for license terms.
 
 #### Build Details
-###### Checkout and download insns
 
 ###### Prerequisites for build
 * Requires Android 2.0.1 and up.
@@ -53,6 +54,7 @@ for license terms.
 * Download and install the most recent apk file: [Scrollmap](https://github.com/Minikutty/Scrollmap/blob/master/bin/ScrollMap.apk?raw=true)
  
 Installation guide is available at: http://www.talkandroid.com/guides/beginner/install-apk-files-on-android/
+
 
 ###### Build instructions
 
