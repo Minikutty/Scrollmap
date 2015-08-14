@@ -19,7 +19,7 @@ https://github.com/Minikutty/Scrollmap/issues
 
 #### Description:
 
-Scrollmap is an android application which acts as a multifunction navigation instrument, showing the current location 
+Scrollmap is an android application which acts as a multifunctional navigation instrument, showing the current location 
 on a chart and the feet above sea level. This app mainly provides the map scrolling functionality of a GPS.
 
 The application supports 2D (overhead) as well as 3D (projection of 2D image to add
@@ -32,9 +32,9 @@ is used and hence scaling has to be done by zooming in and out. To facilitate th
 tiles the given image into smaller pieces such that the pieces are small enough to be
 handled by Android.
 
-For the purpose of simulations, random numbers are generated for the depth data, i.e.
-the depth at different points in the chart would just be generated randomly, whereas in
-reality, the depth information would be provided to the Android device by some external
+For the purpose of simulations, random numbers are generated for the elevation data, i.e.
+the elevation at different points in the chart would just be generated randomly, whereas in
+reality, the elevation information would be provided to the Android device by some external
 devices through Bluetooth or serial port.
 
 #### User Documents
