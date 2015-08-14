@@ -1,5 +1,5 @@
-ScrollMap
-Copyright (c) 2015 Minikutty
+##ScrollMap
+####Copyright (c) 2015 Minikutty
 
 For license information, please refer to the file "License.md".
 
