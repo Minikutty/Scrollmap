@@ -4,7 +4,7 @@
  * 
  * [This program is licensed under the "MIT License"]
  * For license information, please refer the following link. Link is
- * https://github.com/Minikutty/Scrollmap/blob/master/License.md
+ * https://github.com/Minikutty/Scrollmap/blob/master/COPYING
  *
  *  **************************************************************************************/
 
