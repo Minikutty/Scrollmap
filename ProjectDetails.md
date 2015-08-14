@@ -50,7 +50,7 @@ for license terms.
 * The provided Android application works only on a 480x854 WVGA854 resolution Android AVD.
  
 ###### Installation instructions
-* Download and install the most recent apk file: [Scrollmap](https://github.com/Minikutty/Scrollmap/blob/master/bin/ScrollMap.apk)
+* Download and install the most recent apk file: [Scrollmap](https://github.com/Minikutty/Scrollmap/blob/master/bin/ScrollMap.apk?raw=true)
  
 Installation guide is available at: http://www.talkandroid.com/guides/beginner/install-apk-files-on-android/
 
