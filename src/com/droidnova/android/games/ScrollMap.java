@@ -48,7 +48,6 @@ public class ScrollMap extends Activity {
             ScrollMap.latitude = location.getLatitude();
             ScrollMap.longitude = location.getLongitude();
             
-            //Tutorial2D.canv.drawColor(Color.WHITE);
             Toast.makeText(ScrollMap.this,
                     location.getLatitude() + " " + location.getLongitude(),
                     Toast.LENGTH_LONG).show();  // to show a message (latitude and logitude) on the bottom of the screen

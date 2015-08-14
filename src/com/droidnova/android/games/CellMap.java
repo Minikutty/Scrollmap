@@ -82,7 +82,7 @@ public class CellMap extends SurfaceView implements SurfaceHolder.Callback {
         
         int x = 0;
         int y = 0;
-        // _mapSize = bmLargeImage.getHeight()/_cellSize;
+       
         // fill the map with cells
         int id = 0;
         for (int i = 0; i < _mapSize; i++) {
@@ -110,8 +110,7 @@ public class CellMap extends SurfaceView implements SurfaceHolder.Callback {
         			pts[i+1] = sum; 
         		else
         			pts[i+1] = pts[i-1]-3;  
-        		// pts[i+1] = dHeight + dHeight/2 + (dHeight/2)*num;
-        	}        	
+           	}        	
         }
         
         // register the view to the surfaceholder
@@ -137,12 +136,9 @@ public class CellMap extends SurfaceView implements SurfaceHolder.Callback {
         final android.graphics.Matrix matrix = canvas.getMatrix();
         
         Camera camera = new Camera();
-        // canvas.rotate(_angle, dWidth/2-10, dHeight/4);
-        // if(_mode == 2)
         camera.save();
         	
-        // camera.translate(0,0,600);
-        if(_mode == 2) camera.rotateX(55);
+        if(_mode == 2) camera.rotateX(55); //Applies a rotation transform around the X axis.
         camera.getMatrix(matrix);       
         camera.applyToCanvas(canvas);
         
@@ -167,12 +163,8 @@ public class CellMap extends SurfaceView implements SurfaceHolder.Callback {
         matrix.preTranslate(-dWidth/2,-dHeight/2);
         matrix.postTranslate(dWidth/2,dHeight/2);
         camera.restore();
-        
-        //canvas.restore();
-        // canvas.skew(100, 200);
-        // canvas.scale(0, 240f);
-        
-        paint.setColor(Color.GREEN);
+      
+        paint.setColor(Color.GREEN);               // setting the marker
         canvas.drawCircle(dWidth/2-10, dHeight/4, 10, paint);
         Rect rect = new Rect(0,dHeight/2,dWidth,dHeight-40);
         paint.setColor(Color.WHITE);
@@ -185,15 +177,13 @@ public class CellMap extends SurfaceView implements SurfaceHolder.Callback {
 	    canvas.drawLine(dWidth-30, dHeight/2+10, dWidth-30, dHeight-20, paint);
 	       
 	    paint.setStrokeWidth(4);
-		// canvas.drawPoints(pts , paint);
 		canvas.drawLines(pts, paint);
 		paint.setColor(Color.BLACK);
 		paint.setTextSize(20);
 		canvas.drawText("3.6 kt "+_xTouch+" degrees "+_yTouch+" degrees ", 5, dHeight/2, paint);
 		float height = (pts[1]-dHeight/2)*200/ dHeight;
 		canvas.drawText(""+height+" ft", 5, dHeight-40, paint); 
-		// canvas.skew(100, 200);
-        
+		        
     }
     
     /**
@@ -209,9 +199,7 @@ public class CellMap extends SurfaceView implements SurfaceHolder.Callback {
     }
     
     public boolean onEvent(int xMove, int yMove, float angle, int shift) {
-       	// _xOffset = (_xOffset + 1)%200;
-    	// _yOffset = (_yOffset + 1)%200;
-    	
+       	    	
     	if(shift==1){
     	if(xMove < 1625 && yMove < 2237) {
     		bmLargeImage = BitmapFactory.decodeResource(getResources(),
@@ -277,17 +265,13 @@ public class CellMap extends SurfaceView implements SurfaceHolder.Callback {
     		bmLargeImage = BitmapFactory.decodeResource(getResources(),
                     R.drawable.image33);
     	}
-    	//	bmLargeImage = BitmapFactory.decodeResource(getResources(),
-          //          R.drawable.image01);
-    	
+    	   	
     		displayWidth = bmLargeImage.getWidth();
             displayHeight = bmLargeImage.getHeight();
             _xcellSize = displayWidth/_mapSize;
             _ycellSize = displayHeight/_mapSize;
             int x = 0;
             int y = 0;
-            // _mapSize = bmLargeImage.getHeight()/_cellSize;
-            // fill the map with cells
             int id = 0;
             for (int i = 0; i < _mapSize; i++) {
                 _row = new HashMap<Integer, Cell>();
@@ -300,33 +284,12 @@ public class CellMap extends SurfaceView implements SurfaceHolder.Callback {
                 }
                 _mapCells.put(i, _row);
             }
-            /**
-            for (int i = 0; i < 400; i = i+2) {
-            	pts[i] = i+6;
-            	if(i==0)
-            		pts[i+1] = dHeight/2+75;
-            	else
-            	{
-            		float num = gen.nextFloat();
-            		
-            		 int sum = (int) (pts[i-1]+gen.nextInt(3));
-            		if(num < 0.75 && (sum < dHeight-60))
-            			pts[i+1] = sum; 
-            		else
-            			pts[i+1] = pts[i-1]-3;
-            	}
-            } */
-            //invalidate();
-    	}
+          }
     	
     	_xTouch = (76.7833f - (xMove/6020.00f)*0.2639f);
     	_yTouch = (34.8918f - (yMove/8094.00f)*0.2918f);
-    	// _xTouch = xMove;
-    	// _yTouch = yMove;
-    	_xOffset = xMove%1625;
+       	_xOffset = xMove%1625;
     	_yOffset = yMove%2237;
-    	// _xOffset = (int) (((76.7833f - xMove)*6020.0f/0.2639)%1625);
-    	// _yOffset = (int) (((34.8918f - yMove)*8094.0f/0.2918)%2237);
     	if(_mode != 0)
     		_angle = (angle)%360;// + angle;
     	else _angle = 0;
@@ -370,7 +333,7 @@ public class CellMap extends SurfaceView implements SurfaceHolder.Callback {
                 _mapThread.join();
                 retry = false;
             } catch (InterruptedException e) {
-                // we will try it again and again...
+               
             }
         }
     }

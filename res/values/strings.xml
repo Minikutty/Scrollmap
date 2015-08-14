@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+ <!-- Copyright (C) 2015 Minikutty Joseph -->
+ <!-- [This program is licensed under the "MIT License"] -->
+ <!-- For license information, please refer the link https://github.com/Minikutty/Scrollmap/blob/master/License.md -->
 <resources>
     <string name="hello">Hello World, ScrollMap!</string>
     <string name="app_name">ScrollMap</string>

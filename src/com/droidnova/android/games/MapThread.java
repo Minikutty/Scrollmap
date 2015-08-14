@@ -12,20 +12,10 @@ package com.droidnova.android.games;
 
 import android.graphics.Canvas;
 
-/**
- * Thread class to perform the so called "game loop".
- * 
- * @author DJohn
- */
 public class MapThread extends Thread {
     private CellMap _cellMap;
     public boolean _run = false;
     
-    /**
-     * Constructor.
-     * 
-     * @param panel View class on which we trigger the drawing.
-     */
     public MapThread(CellMap map) {
         _cellMap = map;
     }
@@ -44,10 +34,8 @@ public class MapThread extends Thread {
         int shift = 0;
         int prevX = 0;
         int prevY = 0;
-        // double prevX = 0;
-        // double prevY = 0;
-        
-        int xy[] = {1500,1500,1505,1505,1510,1510,1515,1515,1520,1520,1525,1525,1530,1530,1535,1535,1540,1540,1545,1545,
+             
+        int xy[] = {1500,1500,1502,1502,1505,1505,1510,1510,1515,1515,1520,1520,1525,1525,1530,1530,1535,1535,1540,1540,1545,1545,
         		1550,1550,1555,1555,1560,1560,1565,1565,1570,1570,1575,1575,1580,1580,1585,1585,1590,1590,1595,
         		1595,1600,1600,1605,1605,1610,1610,1615,1615,1620,1620,1625,1625,1630,1630,1635,1635,1640,1640,
         		1645,1645,1650,1650,1655,1655,1660,1660,1665,1665,1670,1670,1675,1675,1680,1680,1685,1685,1690,
@@ -149,53 +137,12 @@ public class MapThread extends Thread {
             try {
                 c = _cellMap.getHolder().lockCanvas(null);
                 synchronized (_cellMap.getHolder()) {
-                	//depth = rand.nextInt(3);
-                	// x = (x+1)%2500;
-                    // y = (y+1)%2500;
-                    // x = xy[i]%6020; // change
-                    // y = xy[i+1]%8094; // change
-                	if(prevX != (int) ScrollMap.longitude )
-                	// if(prevX != ScrollMap.longitude )
-                	{
-                		prevX = (int) ScrollMap.longitude; 
-                		prevY = (int) ScrollMap.latitude;
-                		x = prevX;
-                		y = prevY;
-                		/** prevX = ScrollMap.longitude; 
-                		prevY = ScrollMap.latitude;
-                		x = (int) (((76.7833f - prevX)*6020.0f/0.2639)%6020.0);
-                		y = (int) (((34.8918f - prevY)*8094.0f/0.2918)%8094.0); */
-                	}
-                	if(prevY != (int) ScrollMap.latitude )
-                	// if(prevY != ScrollMap.latitude )
-                	{
-                		prevX = (int) ScrollMap.longitude; 
-                		prevY = (int) ScrollMap.latitude;
-                		x = prevX; 
-                		y = prevY;  
-                		/** prevX = ScrollMap.longitude; 
-                		prevY = ScrollMap.latitude;
-                		x = (int) (((76.7833f - prevX)*6020.0f/0.2639)%6020.0);
-                		y = (int) (((34.8918f - prevY)*8094.0f/0.2918)%8094.0); */ 
-                	}
-                	x = (x + 5)%6020;
-                	y = (y + 5)%8094;
-                	/**
-                	x = 0;
-                	if(y<2200)
-                		y = (y+10); //%2100;
-                	else y = y+1;
-                	
-                	if(y == 2237)
-                	{
-                		y = 0;
-                		shift = 1;
-                	} */
-                    if(i>2) {
-                    	px = x - 5;
-                    	py = y - 5;
-                    // px = xy[i-2]%6500; // change
-                    // py = xy[i-1]%8948; // change
+                	 x = xy[i]%6020; 
+                     y = xy[i+1]%8094; 
+       
+                	if(i>2) {
+                     px = xy[i-2]%6500; 
+                     py = xy[i-1]%8948; 
                     }
                     boolean Q00 = (x < 1625 && y < 2237);
                     boolean Q01 = (x < 1625 && y >= 2237 && y < 4474);
@@ -296,13 +243,11 @@ public class MapThread extends Thread {
                     }
                 	i = (i+2);
                 	int j = (i + 8);
-                	// double theta = Math.atan2((x-(xy[j]%6500)), (y-(xy[j+1]%8948))); // change
                 	double theta = Math.atan2(-5, -5);
                 	double angle = Math.toDegrees(theta);
                     _cellMap.onDraw(c);
                     _cellMap.onEvent(x,y,(float) angle, shift);
-                    // _cellMap.onEvent(x,y,(float) 0, shift);
-                    shift = 0;
+                     shift = 0;
                 }
             } finally {
                 // do this in a finally so that if an exception is thrown
