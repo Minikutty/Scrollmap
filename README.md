@@ -14,7 +14,7 @@ Implement the algorithm for calculating directions, reading GPS coordinates and 
 This work is available under the "MIT License". For license information, please refer to the file "License.md".
 
 Here's the link which provides license information. 
-"https://github.com/Minikutty/Scrolling-Map-for-navigational-Device/blob/master/License.md"
+"https://github.com/Minikutty/Scrollmap/blob/master/COPYING"
 
 More information about project can be found at [Project Details](https://github.com/Minikutty/Scrollmap/blob/master/ProjectDetails.md)
 
