@@ -39,7 +39,7 @@ devices through Bluetooth or serial port.
 
 #### License Information
 
-This work is available under the "MIT License". Please see the file COPYING in this distribution 
+This work is available under the "MIT License". Please see the file [COPYING] () in this distribution 
 for license terms.
 
 #### Build Details
@@ -50,7 +50,7 @@ for license terms.
 * The provided Android application works only on a 480x854 WVGA854 resolution Android AVD.
  
 ###### Installation instructions
-* Download and install the most recent apk file: Scrollmap.
+* Download and install the most recent apk file: [Scrollmap](https://github.com/Minikutty/Scrollmap/blob/master/bin/ScrollMap.apk)
  
 Installation guide is available at: http://www.talkandroid.com/guides/beginner/install-apk-files-on-android/
 
