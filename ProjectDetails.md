@@ -39,7 +39,7 @@ devices through Bluetooth or serial port.
 
 #### License Information
 
-This work is available under the "MIT License". Please see the file [COPYING] () in this distribution 
+This work is available under the "MIT License". Please see the file [COPYING] (https://github.com/Minikutty/Scrollmap/blob/master/COPYING) in this distribution 
 for license terms.
 
 #### Build Details
