@@ -21,8 +21,8 @@ https://github.com/Minikutty/Scrollmap/issues
 
 MANUAL 
 
-A scrollmap is an android application which acts as a multifunction navigation instrument, showing the current location 
-on a chart and the feet above sea level. This app mainly provides the scrolling map functionality of a GPS.
+Scrollmap is an android application which acts as a multifunction navigation instrument, showing the current location 
+on a chart and the feet above sea level. This app mainly provides the map scrolling functionality of a GPS.
 
 The application supports 2D (overhead) as well as 3D (projection of 2D image to add
 perspective) modes. The 2D mode also supports “North-up” and “Heading-up” modes. 
