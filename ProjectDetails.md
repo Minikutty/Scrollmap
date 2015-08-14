@@ -48,14 +48,18 @@ for license terms.
 #### Build Details
 
 ###### Prerequisites for build
+* Android SDK
+* Eclipse IDE (prefer Eclipse 3.7.2 (Indigo) or greater)
+* ADT plugin
 * Requires Android 2.0.1 and up.
 * The provided Android application works only on a 480x854 WVGA854 resolution Android AVD.
  
 ###### Installation instructions
 * Download and install the most recent apk file: [Scrollmap](https://github.com/Minikutty/Scrollmap/blob/master/bin/ScrollMap.apk?raw=true)
  
-Installation guide is available at: http://www.talkandroid.com/guides/beginner/install-apk-files-on-android/
+* Online installation help for installing apk file on your android phone is available at [Install instructions] (http://vbraille.cs.washington.edu/doc/how_to_install_apks.pdf) 
 
+* For setting up an environment ready to develop Android applications is available at [SET UP](http://www.instructables.com/id/How-To-Setup-Eclipse-for-Android-App-Development/?ALLSTEPS)
 
 ###### Build instructions
 
