@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
  <!-- Copyright (C) 2015 Minikutty Joseph -->
  <!-- [This program is licensed under the "MIT License"] -->
- <!-- For license information, please refer the link https://github.com/Minikutty/Scrollmap/blob/master/License.md -->
+ <!-- For license information, please refer the link https://github.com/Minikutty/Scrollmap/blob/master/COPYING -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
