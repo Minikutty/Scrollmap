@@ -1,7 +1,7 @@
 ##ScrollMap
 ####Copyright (c) 2015 Minikutty
 
-A scrollmap is an android application which acts as a multifunction navigation instrument, showing the current location on a chart and the feet above sea level. This app mainly provides the scrolling map functionality of a GPS.
+A scrollmap is an android application which acts as a multifunctional navigation instrument, showing the current location on a chart and the feet above sea level. This app mainly provides the scrolling map functionality of a GPS.
 
 There are 3 modes of operation in this application.
 * top of the image always pointing north
@@ -16,7 +16,7 @@ This work is available under the "MIT License". For license information, please 
 Here's the link which provides license information. 
 "https://github.com/Minikutty/Scrolling-Map-for-navigational-Device/blob/master/License.md"
 
-More information can be found in the file Project Information
+More information can be found in the file [Project Details](https://github.com/Minikutty/Scrollmap/blob/master/ProjectDetails.md)
 
 Contact: minikuttychiramel@gmail.com
 
