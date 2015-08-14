@@ -38,7 +38,7 @@ reality, the depth information would be provided to the Android device by some e
 devices through Bluetooth or serial port.
 
 #### User Documents
-User docs can be found at [User Manual](https://github.com/Minikutty/Scrollmap/blob/master/Manual.pdf)
+User docs can be found at [User Manual](https://github.com/Minikutty/Scrollmap/blob/master/User%20Manual.pdf)
 
 #### License Information
 
